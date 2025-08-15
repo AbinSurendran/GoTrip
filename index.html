@@ -1,267 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoTrip</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Header -->
+
     <header>
-        <div class="logo">GoTrip</div>
-        <nav>
-            <a href="#top-destinations">Destinations</a>
-            <a href="#hotels">Hotels</a>
-            <a href="#">Flights</a>
-            <a href="#">Bookings</a>
-            <a href="#">Login</a>
-            <button class="signup-btn">Sign Up</button>
+      <div class="logo">GoTrip</div>
 
-              <!-- Dark Mode Toggle -->
+      <!-- Hidden checkbox -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- Nav links -->
+      <nav>
+        <a href="#top-destinations">Destinations</a>
+        <a href="#hotels">Hotels</a>
+        <a href="#">Flights</a>
+        <a href="#">Bookings</a>
+        <a href="#">Login</a>
+        <button class="signup-btn">Sign Up</button>
         <button id="dark-mode-toggle" class="dark-mode-btn">
-            <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-moon"></i>
         </button>
+      </nav>
 
-        </nav>
+      <!-- Menu toggle icon -->
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times"></i>
+      </label>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-text">
-            <p class="tagline">Best Destinations around the world</p>
-            <h1>Travel, enjoy and live a new and full life</h1>
-            <p class="description">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
-            <div class="hero-buttons">
-                <button class="find-btn">Find out more</button>
-                <button class="play-btn"><i class="fa-solid fa-play"></i> Play Demo</button>
-            </div>
+      <div class="hero-text">
+        <p class="tagline">Best Destinations around the world</p>
+        <h1>Travel, enjoy and live a new and full life</h1>
+        <p class="description">
+          Built Wicket longer admire do barton vanity itself do in it. Preferred
+          to sportsmen it engrossed listening. Park gate sell they west hard for
+          the.
+        </p>
+        <div class="hero-buttons">
+          <button class="find-btn">Find out more</button>
+          <button class="play-btn">
+            <i class="fa-solid fa-play"></i> Play Demo
+          </button>
         </div>
-        <div class="hero-image">
-            <!-- Add hero image here -->
-            <img src="images/PIC1.jpg" alt="Travel">
-        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Add hero image here -->
+        <img src="images/PIC1.jpg" alt="Travel" />
+      </div>
     </section>
 
     <!-- Services Section -->
     <section class="services">
-        <h3>CATEGORY</h3>
-        <h2>We Offer Best Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <!-- Add card image here -->
-                <img src="images/PIC2.jpg" alt="Service">
-                <h4>Calculated Weather</h4>
-                <p>Built Wicket longer admire do barton vanity itself do in it.</p>
-            </div>
-            <div class="card">
-                <img src="images/PIC4.webp" alt="Service">
-                <h4>Best Flights</h4>
-                <p>Engrossed listening. Park gate sell they west hard for the.</p>
-            </div>
-            <div class="card">
-                <img src="images/PIC5.jpg" alt="Service">
-                <h4>Local Events</h4>
-                <p>Barton vanity itself do in it. Preferred to men it engrossed listening.</p>
-            </div>
-            <div class="card">
-                <img src="images/PIC6.jpg" alt="Service">
-                <h4>Customization</h4>
-                <p>We deliver outsourced aviation services for military customers.</p>
-            </div>
+      <h3>CATEGORY</h3>
+      <h2>We Offer Best Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <!-- Add card image here -->
+          <img src="images/PIC2.jpg" alt="Service" />
+          <h4>Calculated Weather</h4>
+          <p>Built Wicket longer admire do barton vanity itself do in it.</p>
         </div>
+        <div class="card">
+          <img src="images/PIC4.webp" alt="Service" />
+          <h4>Best Flights</h4>
+          <p>Engrossed listening. Park gate sell they west hard for the.</p>
+        </div>
+        <div class="card">
+          <img src="images/PIC5.jpg" alt="Service" />
+          <h4>Local Events</h4>
+          <p>
+            Barton vanity itself do in it. Preferred to men it engrossed
+            listening.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/PIC6.jpg" alt="Service" />
+          <h4>Customization</h4>
+          <p>We deliver outsourced aviation services for military customers.</p>
+        </div>
+      </div>
     </section>
 
     <!-- TOP DISTINATION -->
 
     <section class="top-destinations" id="top-destinations">
-  <h2 class="section-title">Top Destinations</h2>
-  <p class="section-subtitle">Explore our top picks for your next adventure</p>
+      <h2 class="section-title">Top Destinations</h2>
+      <p class="section-subtitle">
+        Explore our top picks for your next adventure
+      </p>
 
-  <div class="destination-cards">
-    <div class="destination-card">
-      <img src="images/P7.jpg" alt="Destination 1">
-      <div class="destination-info">
-        <h3>Rome, Italy</h3>
-        <p>$5.42k • 10 Days Trip</p>
+      <div class="destination-cards">
+        <div class="destination-card">
+          <img src="images/P7.jpg" alt="Destination 1" />
+          <div class="destination-info">
+            <h3>Rome, Italy</h3>
+            <p>$5.42k • 10 Days Trip</p>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="images/P8.jpg" alt="Destination 2" />
+          <div class="destination-info">
+            <h3>London, UK</h3>
+            <p>$4.2k • 12 Days Trip</p>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="images/P9.jpg" alt="Destination 3" />
+          <div class="destination-info">
+            <h3>Full Europe</h3>
+            <p>$15k • 28 Days Trip</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="destination-card">
-      <img src="images/P8.jpg" alt="Destination 2">
-      <div class="destination-info">
-        <h3>London, UK</h3>
-        <p>$4.2k • 12 Days Trip</p>
+    <!-- hOTELS -->
+
+    <section id="hotels" class="hotels">
+      <h2>Popular Hotels</h2>
+      <div class="hotel-cards">
+        <!-- Row 1 -->
+        <div class="hotel-card">
+          <img src="images/H1.jpg" alt="Hotel Sunshine" />
+          <h3>Hotel Sunshine</h3>
+          <p>Luxury rooms with a sea view and 5-star amenities.</p>
+        </div>
+        <div class="hotel-card">
+          <img src="images/H2.jpg" alt="Mountain View Resort" />
+          <h3>Mountain View Resort</h3>
+          <p>Peace and nature in our mountain-side cabins.</p>
+        </div>
+        <div class="hotel-card">
+          <img src="images/H3.jpg" alt="City Lights Inn" />
+          <h3>City Lights Inn</h3>
+          <p>Stay in the heart of the city with modern facilities.</p>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="hotel-card">
+          <img src="images/H4.jpg" alt="Beach Paradise Hotel" />
+          <h3>Beach Paradise Hotel</h3>
+          <p>Relax by the ocean with all-inclusive service.</p>
+        </div>
+        <div class="hotel-card">
+          <img src="images/H5.jpg" alt="Grand Royal" />
+          <h3>Grand Royal</h3>
+          <p>Classic luxury and fine dining in the city center.</p>
+        </div>
+        <div class="hotel-card">
+          <img src="images/H6.jpg" alt="Lakeside Retreat" />
+          <h3>Lakeside Retreat</h3>
+          <p>Enjoy peaceful lake views from your private balcony.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="destination-card">
-      <img src="images/P9.jpg" alt="Destination 3">
-      <div class="destination-info">
-        <h3>Full Europe</h3>
-        <p>$15k • 28 Days Trip</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- hOTELS -->
- 
-<section id="hotels" class="hotels">
-  <h2>Popular Hotels</h2>
-  <div class="hotel-cards">
-    <!-- Row 1 -->
-    <div class="hotel-card">
-      <img src="images/H1.jpg" alt="Hotel Sunshine">
-      <h3>Hotel Sunshine</h3>
-      <p>Luxury rooms with a sea view and 5-star amenities.</p>
-    </div>
-    <div class="hotel-card">
-      <img src="images/H2.jpg" alt="Mountain View Resort">
-      <h3>Mountain View Resort</h3>
-      <p>Peace and nature in our mountain-side cabins.</p>
-    </div>
-    <div class="hotel-card">
-      <img src="images/H3.jpg" alt="City Lights Inn">
-      <h3>City Lights Inn</h3>
-      <p>Stay in the heart of the city with modern facilities.</p>
-    </div>
-
-    <!-- Row 2 -->
-    <div class="hotel-card">
-      <img src="images/H4.jpg" alt="Beach Paradise Hotel">
-      <h3>Beach Paradise Hotel</h3>
-      <p>Relax by the ocean with all-inclusive service.</p>
-    </div>
-    <div class="hotel-card">
-      <img src="images/H5.jpg" alt="Grand Royal">
-      <h3>Grand Royal</h3>
-      <p>Classic luxury and fine dining in the city center.</p>
-    </div>
-    <div class="hotel-card">
-      <img src="images/H6.jpg" alt="Lakeside Retreat">
-      <h3>Lakeside Retreat</h3>
-      <p>Enjoy peaceful lake views from your private balcony.</p>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="trip-section">
-    <!-- Left Text Content -->
-    <div class="trip-text">
+    <section class="trip-section">
+      <!-- Left Text Content -->
+      <div class="trip-text">
         <h4>Easy and Fast</h4>
         <h2>Book Your Next Trip In 3 Easy Steps</h2>
 
         <div class="step">
-            <div class="icon-box yellow"><i class="fa-solid fa-map-marker-alt"></i></div>
-            <div class="step-text">
-                <h3>Choose Destination</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+          <div class="icon-box yellow">
+            <i class="fa-solid fa-map-marker-alt"></i>
+          </div>
+          <div class="step-text">
+            <h3>Choose Destination</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
 
         <div class="step">
-            <div class="icon-box red"><i class="fa-solid fa-credit-card"></i></div>
-            <div class="step-text">
-                <h3>Make Payment</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+          <div class="icon-box red">
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+          <div class="step-text">
+            <h3>Make Payment</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
 
         <div class="step">
-            <div class="icon-box blue"><i class="fa-solid fa-plane"></i></div>
-            <div class="step-text">
-                <h3>Reach Airport on Selected Date</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+          <div class="icon-box blue"><i class="fa-solid fa-plane"></i></div>
+          <div class="step-text">
+            <h3>Reach Airport on Selected Date</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Right Image Card -->
-    <div class="trip-card">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Trip to Greece">
+      <!-- Right Image Card -->
+      <div class="trip-card">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+          alt="Trip to Greece"
+        />
         <div class="trip-card-content">
-            <h4>Trip to Greece</h4>
-            <p>14-29 June | by Robbin</p>
+          <h4>Trip to Greece</h4>
+          <p>14-29 June | by Robbin</p>
         </div>
-    </div>
-</section>
-
-
-
+      </div>
+    </section>
 
     <!-- Footer -->
-   <footer class="footer">
-  <div class="footer-container">
-    <!-- Left section -->
-    <div class="footer-left">
-      <h2 class="logo">GoTrip.</h2>
-      <p>Book your trip in minutes, get full<br>Control for much longer.</p>
-    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left section -->
+        <div class="footer-left">
+          <h2 class="logo">GoTrip.</h2>
+          <p>
+            Book your trip in minutes, get full<br />Control for much longer.
+          </p>
+        </div>
 
-    <!-- Center section -->
-    <div class="footer-links">
-      <div>
-        <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Mobile</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="#">Help/FAQ</a>
-        <a href="#">Press</a>
-        <a href="#">Affiliates</a>
-      </div>
-      <div>
-        <h4>More</h4>
-        <a href="#">Airline Fees</a>
-        <a href="#">Airline</a>
-        <a href="#">Low Fare Tips</a>
-      </div>
-    </div>
+        <!-- Center section -->
+        <div class="footer-links">
+          <div>
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Mobile</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <a href="#">Help/FAQ</a>
+            <a href="#">Press</a>
+            <a href="#">Affiliates</a>
+          </div>
+          <div>
+            <h4>More</h4>
+            <a href="#">Airline Fees</a>
+            <a href="#">Airline</a>
+            <a href="#">Low Fare Tips</a>
+          </div>
+        </div>
 
-    <!-- Right section -->
-    <div class="footer-right">
-      <div class="social-icons">
-        <span>🔘</span>
-        <span>🎨</span>
+        <!-- Right section -->
+        <div class="footer-right">
+          <div class="social-icons">
+            <span>🔘</span>
+            <span>🎨</span>
+          </div>
+          <p>Discover our app</p>
+          <div class="app-buttons">
+            <i class="fa-brands fa-google-play"></i>
+          </div>
+        </div>
       </div>
-      <p>Discover our app</p>
-      <div class="app-buttons">
-<i class="fa-brands fa-google-play"></i>        
-      </div>
-    </div>
-  </div>
-  <p class="copyright">All rights reserved@GoTrip.co</p>
-</footer>
+      <p class="copyright">All rights reserved@GoTrip.co</p>
+    </footer>
+  </body>
 
-</body>
+  <script>
+    const toggleBtn = document.getElementById("dark-mode-toggle");
+    const icon = toggleBtn.querySelector("i");
 
-<script>
-    const toggleBtn = document.getElementById('dark-mode-toggle');
-    const icon = toggleBtn.querySelector('i');
-
-    toggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        // Toggle icon between moon and sun
-        if (document.body.classList.contains('dark-mode')) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        } else {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-        }
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      // Toggle icon between moon and sun
+      if (document.body.classList.contains("dark-mode")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+      }
     });
-</script>
-
-
+  </script>
 </html>
